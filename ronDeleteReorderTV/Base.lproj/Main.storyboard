@@ -54,7 +54,7 @@
         <!--Add Player-->
         <scene sceneID="cf3-lb-1oi">
             <objects>
-                <viewController id="VQb-Ys-47I" sceneMemberID="viewController">
+                <viewController id="VQb-Ys-47I" customClass="AddViewController" customModule="ronDeleteReorderTV" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aED-dJ-JWR"/>
                         <viewControllerLayoutGuide type="bottom" id="Na6-AK-i5r"/>
@@ -62,11 +62,116 @@
                     <view key="view" contentMode="scaleToFill" id="lc0-IW-oxE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Table Row" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HwR-ND-Pvu">
+                                <rect key="frame" x="224" y="96" width="152" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Z1Y-mV-RW3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Player Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5U8-MR-DJ5">
+                                <rect key="frame" x="228" y="144" width="143" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Jgw-Ej-OwD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Player Name Goes Here" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tpn-YH-bHW">
+                                <rect key="frame" x="176" y="170" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="V9E-A6-2ko"/>
+                                    <constraint firstAttribute="height" constant="30" id="unr-VW-fmf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Player Position" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvb-Cu-jix">
+                                <rect key="frame" x="228" y="235" width="145" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCJ-2U-yO6">
+                                <rect key="frame" x="278" y="264" width="46" height="30"/>
+                                <state key="normal" title="Center">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="centerBut:" destination="VQb-Ys-47I" eventType="touchUpInside" id="xTb-zr-jwC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eia-UD-Z8K">
+                                <rect key="frame" x="213" y="264" width="57" height="30"/>
+                                <state key="normal" title="Forward">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="forwardBut:" destination="VQb-Ys-47I" eventType="touchUpInside" id="TWb-jz-uKK"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="  Forward " borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Rj-LB-bF0">
+                                <rect key="frame" x="258" y="302" width="87" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kN4-Je-PoK">
+                                <rect key="frame" x="332" y="264" width="46" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="zBo-DE-gdc"/>
+                                </constraints>
+                                <state key="normal" title="Guard">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="guardBut:" destination="VQb-Ys-47I" eventType="touchUpInside" id="Omt-hp-u3x"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kN4-Je-PoK" firstAttribute="top" secondItem="hvb-Cu-jix" secondAttribute="bottom" constant="8" id="1b6-rJ-xT9"/>
+                            <constraint firstAttribute="centerX" secondItem="5U8-MR-DJ5" secondAttribute="centerX" id="8aB-3X-Esc"/>
+                            <constraint firstItem="tpn-YH-bHW" firstAttribute="centerX" secondItem="1Rj-LB-bF0" secondAttribute="centerX" id="Fha-y7-89p"/>
+                            <constraint firstItem="kN4-Je-PoK" firstAttribute="leading" secondItem="UCJ-2U-yO6" secondAttribute="trailing" constant="8" symbolic="YES" id="GSD-8O-Adb"/>
+                            <constraint firstItem="HwR-ND-Pvu" firstAttribute="top" secondItem="aED-dJ-JWR" secondAttribute="bottom" constant="32" id="Mad-05-KB5"/>
+                            <constraint firstAttribute="centerX" secondItem="tpn-YH-bHW" secondAttribute="centerX" constant="-1" id="NPq-bz-J1k"/>
+                            <constraint firstAttribute="centerX" secondItem="HwR-ND-Pvu" secondAttribute="centerX" id="Po3-dV-Mxx"/>
+                            <constraint firstItem="1Rj-LB-bF0" firstAttribute="top" secondItem="eia-UD-Z8K" secondAttribute="bottom" constant="8" symbolic="YES" id="YYY-Cn-LZm"/>
+                            <constraint firstItem="hvb-Cu-jix" firstAttribute="top" secondItem="tpn-YH-bHW" secondAttribute="bottom" constant="35" id="Zn1-K4-1ys"/>
+                            <constraint firstItem="UCJ-2U-yO6" firstAttribute="centerX" secondItem="1Rj-LB-bF0" secondAttribute="centerX" id="aG4-hx-c6l"/>
+                            <constraint firstItem="5U8-MR-DJ5" firstAttribute="top" secondItem="HwR-ND-Pvu" secondAttribute="bottom" constant="20" id="aWX-VY-LaC"/>
+                            <constraint firstItem="UCJ-2U-yO6" firstAttribute="bottom" secondItem="eia-UD-Z8K" secondAttribute="bottom" id="as1-Sx-OEy"/>
+                            <constraint firstItem="5U8-MR-DJ5" firstAttribute="leading" secondItem="hvb-Cu-jix" secondAttribute="leading" id="d4b-2W-2JM"/>
+                            <constraint firstItem="tpn-YH-bHW" firstAttribute="top" secondItem="5U8-MR-DJ5" secondAttribute="bottom" constant="5" id="oE7-dQ-DUg"/>
+                            <constraint firstItem="1Rj-LB-bF0" firstAttribute="top" secondItem="kN4-Je-PoK" secondAttribute="bottom" constant="7" id="omw-yu-6Z8"/>
+                            <constraint firstItem="UCJ-2U-yO6" firstAttribute="top" secondItem="hvb-Cu-jix" secondAttribute="bottom" constant="8" id="sjo-yK-SI7"/>
+                            <constraint firstItem="UCJ-2U-yO6" firstAttribute="leading" secondItem="eia-UD-Z8K" secondAttribute="trailing" constant="8" symbolic="YES" id="taf-kJ-0wZ"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Player" id="UiY-X1-E0l"/>
+                    <navigationItem key="navigationItem" title="Add Player" id="UiY-X1-E0l">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="mcu-KM-GYE">
+                            <connections>
+                                <segue destination="kEu-li-0Pv" kind="unwind" unwindAction="cancelBackToPlayersVC:" id="TD4-kG-QzO"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="c6u-3z-NKW">
+                            <connections>
+                                <segue destination="kEu-li-0Pv" kind="unwind" identifier="SavePlayer" unwindAction="addVC:" id="Lwf-qJ-NKO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="playerName" destination="tpn-YH-bHW" id="gAo-sZ-Hpd"/>
+                        <outlet property="playerPosition" destination="1Rj-LB-bF0" id="L7e-Iv-iNq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ipP-lH-MBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="kEu-li-0Pv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2417" y="-304"/>
         </scene>

@@ -15,6 +15,7 @@
 		E49AE4CA1B14CAB80075BB88 /* PlayersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49AE4C91B14CAB80075BB88 /* PlayersVC.swift */; };
 		E49AE4CC1B15010F0075BB88 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49AE4CB1B15010F0075BB88 /* Player.swift */; };
 		E49AE4CE1B150D720075BB88 /* DataForTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49AE4CD1B150D720075BB88 /* DataForTable.swift */; };
+		E4FC87731B1755A000FE98DB /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FC87721B1755A000FE98DB /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		E49AE4C91B14CAB80075BB88 /* PlayersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersVC.swift; sourceTree = "<group>"; };
 		E49AE4CB1B15010F0075BB88 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		E49AE4CD1B150D720075BB88 /* DataForTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataForTable.swift; sourceTree = "<group>"; };
+		E4FC87721B1755A000FE98DB /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				E49AE4A91B14BC0A0075BB88 /* AppDelegate.swift */,
 				E49AE4C91B14CAB80075BB88 /* PlayersVC.swift */,
+				E4FC87721B1755A000FE98DB /* AddViewController.swift */,
 				E49AE4CB1B15010F0075BB88 /* Player.swift */,
 				E49AE4CD1B150D720075BB88 /* DataForTable.swift */,
 				E49AE4AD1B14BC0A0075BB88 /* Main.storyboard */,
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4FC87731B1755A000FE98DB /* AddViewController.swift in Sources */,
 				E49AE4AA1B14BC0A0075BB88 /* AppDelegate.swift in Sources */,
 				E49AE4CC1B15010F0075BB88 /* Player.swift in Sources */,
 				E49AE4CE1B150D720075BB88 /* DataForTable.swift in Sources */,
@@ -419,6 +423,7 @@
 				E49AE4C51B14BC0A0075BB88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E49AE4C61B14BC0A0075BB88 /* Build configuration list for PBXNativeTarget "ronDeleteReorderTVTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +432,7 @@
 				E49AE4C81B14BC0A0075BB88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

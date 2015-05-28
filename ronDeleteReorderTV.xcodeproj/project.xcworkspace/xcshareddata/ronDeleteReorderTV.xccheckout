@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>E8328B86-A00B-4F94-A275-D1734B2C9AF2</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>ronDeleteReorderTV</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>764443DE0DB847E50B6043C5DDDA73F13838661C</key>
 		<string>https://github.com/ron333/User-Creation-of-TableView-Rows.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ronDeleteReorderTV.xcodeproj/project.xcworkspace</string>
+	<string>ronDeleteReorderTV.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>764443DE0DB847E50B6043C5DDDA73F13838661C</key>

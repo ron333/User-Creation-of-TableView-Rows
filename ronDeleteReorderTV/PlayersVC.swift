@@ -18,6 +18,24 @@ class PlayersVC: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    
+    @IBAction func cancelBackToPlayersVC(segue:UIStoryboardSegue) {
+        
+    }
+    
+    @IBAction func addVC(segue:UIStoryboardSegue) {
+        if let addPlayerVC = segue.sourceViewController as? AddViewController
+        {
+            //add the new player to the players array
+            players.append(addPlayerVC.player)
+            
+            //update the tableView
+            let indexPath = NSIndexPath(forRow: players.count-1, inSection: 0)
+            tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
+        }
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
